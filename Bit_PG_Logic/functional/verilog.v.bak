@@ -1,0 +1,6 @@
+//Verilog HDL for "Adder", "Bit_PG_Logic" "functional"
+
+
+module Bit_PG_Logic ( );
+
+endmodule

@@ -1,0 +1,13 @@
+runCompOnly (t nil)
+snapshotPrefix ""
+runOpts "Interactive (debugger)"
+saveStopTime ""
+compileVAAsVAMS (nil)
+saveTimes ""
+saveStartTime ""
+snapshot ""
+runElabOnly (t nil)
+saveTimeInterval ""
+runSimOnly (t)
+restartFlag (nil)
+cleanSnapShot (nil)

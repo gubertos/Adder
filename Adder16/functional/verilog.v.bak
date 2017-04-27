@@ -1,0 +1,13 @@
+//Verilog HDL for "Adder", "adder" "functional"
+
+module adder (
+	input wire A[15:0],
+	input wire B[15:0],
+
+	output reg [15:0] Y,
+	output reg Cout
+);
+
+always @* {Cout,Y} = A + B;
+
+endmodule
