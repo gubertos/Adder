@@ -1,5 +1,5 @@
 //Verilog HDL for "Adder_BT", "Adder_tb" "functional"
-`timescale 1ns/1ns
+`timescale 1ps/1ps
 
 module SignalGenerator_tb(
 	output reg [15:0] A,
@@ -13,9 +13,9 @@ integer seed,i,j;
 always
 begin
 	clk = 1;
-	#1;
+	#10_000;
 	clk = 0;
-	#1;
+	#10_000;
 end
 
 always @(negedge clk)
