@@ -2,14 +2,14 @@
 
 
 module Bit_PG_Logic (
-	input wire	a,
-	input wire	b,
+	input wire	A,
+	input wire	B,
 
 	output wire	P,
 	output wire	G
 );
 
-assign P = a ^ b;
-assign G = a & b;
+assign P = A ^ B;
+assign G = A & B;
 
 endmodule
