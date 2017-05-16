@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("Adder" "adder_dffx16_sim" "schematic" "spectre")
+descriptionText = "None"

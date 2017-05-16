@@ -1,0 +1,6 @@
+TDMCHECKPOINT="1.0"
+Adder/Adder16_tb type="cell"
+Adder/Adder16_tb_old type="cell"
+Adder/BandG_tb type="cell"
+Adder/SignalGenerator_tb type="cell"
+keepEmptyCategory type="unknown"
