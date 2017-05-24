@@ -1,5 +1,5 @@
 //Verilog HDL for "Adder_BT", "Adder_tb" "functional"
-`timescale 1ps/1ps
+`timescale 1ns/1ns
 
 module SigGen_tb(
 	output reg [3:0] A,
@@ -7,7 +7,7 @@ module SigGen_tb(
 	output reg rst = 0
 );
 
-localparam CLK_HALF_P = 10_000;
+localparam CLK_HALF_P = 10;
 
 reg [3:0] counter = 'b0;
 
