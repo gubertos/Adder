@@ -16,7 +16,7 @@ always @(posedge clk or posedge rst)
 	else begin
 		error <= 1;
 // Uncomment the follwing line to stop the simulation when error is detected.
-		// #1 $finish;
+		#1 $finish;
     end
 
 endmodule
