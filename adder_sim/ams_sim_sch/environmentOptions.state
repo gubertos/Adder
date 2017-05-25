@@ -3,7 +3,7 @@
 (envOpts SpecialHandleForDigitalBlock) nil
 (envOpts alwaysUseIeSetup) nil
 (envOpts amsIEsList) nil
-(envOpts builtinuser) nil
+(envOpts builtinuser) t
 (envOpts cleanSnapShot) (nil)
 (envOpts cmd64bit) nil
 (envOpts compatMode) "spectre"
