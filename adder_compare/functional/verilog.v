@@ -11,12 +11,18 @@ module adder_compare (
 	output reg error
 );
 
-always @(posedge clk or posedge rst)
-	if( rst || (result === ref)) error <= 0;
+always @(posedge clk or posedge rst) begin
+	if( rst || (result === ref)) begin
+		error <= 0;
+		$display("[OK] result = %b \n[OK] refxxx = %b",result,ref);
+	end
 	else begin
 		error <= 1;
-// Uncomment the follwing line to stop the simulation when error is detected.
-		// #1 $finish;
+		$display("[FAILED] result = %b \n[FAILED] refxxx = %b",result,ref);
+		// Uncomment the follwing line to stop the simulation when error is detected.
+		//#1 $finish;
     end
+end
 
 endmodule
+
