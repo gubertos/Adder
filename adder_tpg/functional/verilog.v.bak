@@ -3,7 +3,7 @@
 
 module adder_tpg
 #(parameter CLK_PERIOD=10_000,
-            PATTERNS=128
+            PATTERNS=100
 )
 ( 
 	output reg [15:0] a,
