@@ -9,6 +9,6 @@ module inv_GreyCell(
 	output wire	Gout
 );
 
-assign Gout = ~(Gin_cur | (Pin_cur & Gin_prev));
+assign Gout = ~((Gin_cur | Pin_cur) & Gin_prev);
 
 endmodule
