@@ -9,7 +9,8 @@ module Bit_PG_Logic (
 	output wire	G
 );
 
-assign P = A ^ B;
+//assign P = A ^ B;
+assign P = ((~(A&B)) & (A|B));
 assign G = A & B;
 
 endmodule
