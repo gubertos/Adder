@@ -1,5 +1,6 @@
 TDMCHECKPOINT="1.0"
 Adder/Bit_PG_Logic type="cell"
+Adder/Bit_PG_Logic_inv type="cell"
 Adder/BlackCell type="cell"
 Adder/BlackCell_inv type="cell"
 Adder/DFlipFlop_x1 type="cell"
