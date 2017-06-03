@@ -3,7 +3,7 @@
 `timescale 1ps/1ps
 
 module adder_tpg_power
-#(parameter CLK_PERIOD=100_000,
+#(parameter CLK_PERIOD=10_000,
             PATTERNS=128
 )
 ( 
