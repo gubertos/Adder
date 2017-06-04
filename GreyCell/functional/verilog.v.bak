@@ -1,6 +1,0 @@
-//Verilog HDL for "Adder", "GreyCell" "functional"
-
-
-module GreyCell ( );
-
-endmodule

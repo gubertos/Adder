@@ -1,6 +1,0 @@
-//Verilog HDL for "Adder", "Sum_Logic" "functional"
-
-
-module Sum_Logic ( );
-
-endmodule
