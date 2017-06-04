@@ -1,6 +1,7 @@
 TDMCHECKPOINT="1.0"
 Adder/Adder16 type="cell"
 Adder/Adder_HC_inv type="cell"
+Adder/Adder_HC_inv_v2 type="cell"
 Adder/Adder_HCwithCSel type="cell"
 Adder/Adder_HCwithCSel_copy type="cell"
 Adder/cds_globals type="cell"
