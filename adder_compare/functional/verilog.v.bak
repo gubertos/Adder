@@ -14,11 +14,11 @@ module adder_compare (
 always @(posedge clk or posedge rst) begin
 	if( rst || (result === ref)) begin
 		error <= 0;
-		//$display("[OK] result = %b \n[OK] refxxx = %b",result,ref);
+		$display("[OK] result = %b \n[OK] refxxx = %b",result,ref);
 	end
 	else begin
 		error <= 1;
-		//$display("[FAILED] result = %b \n[FAILED] refxxx = %b",result,ref);
+		$display("[FAILED] result = %b \n[FAILED] refxxx = %b",result,ref);
 		// Uncomment the follwing line to stop the simulation when error is detected.
 		//#1 $finish;
     end

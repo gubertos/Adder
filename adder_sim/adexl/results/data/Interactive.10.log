@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Jun  7 21:34:12 2017 
+Best design point: 2
+Design specs: 
+	Adder:adder_sim:1	corner	ff - 
+	Adder:adder_sim:1	corner	Nominal - 
+Design parameters: 
+	CLK_PER		900
+	k		2
+	wn		240n
+	ln		180n
+
+Received stop signal from user. 
+Interactive.10 completed. 
+Current time: Wed Jun  7 21:37:11 2017 

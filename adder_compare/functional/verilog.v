@@ -20,7 +20,7 @@ always @(posedge clk or posedge rst) begin
 		error <= 1;
 		$display("[FAILED] result = %b \n[FAILED] refxxx = %b",result,ref);
 		// Uncomment the follwing line to stop the simulation when error is detected.
-		//#1 $finish;
+		#1 $finish;
     end
 end
 
