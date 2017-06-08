@@ -1,0 +1,1839 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="1">ff
+				<models>
+					<model enabled="1">mm180_reg18_v124.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+						<modelsection>"ff"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">ss
+				<models>
+					<model enabled="1">mm180_reg18_v124.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+						<modelsection>"ss"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">fnsp
+				<models>
+					<model enabled="1">mm180_reg18_v124.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+						<modelsection>"fnsp"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">snfp
+				<models>
+					<model enabled="1">mm180_reg18_v124.lib.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+						<modelsection>"snfp"</modelsection>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">Adder:adder_sim:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>adder_sim</value>
+					</option>
+					<option>lib
+						<value>Adder</value>
+					</option>
+					<option>sim
+						<value>ams</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>Adder:adder_sim:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>adder_sim</value>
+					</option>
+					<option>lib
+						<value>Adder</value>
+					</option>
+					<option>sim
+						<value>ams</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>ams_power</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var enabled="1">CLK_PER
+				<value>{Inclusion List}800{Inclusion List}{From/To}Linear:800:5:900{From/To}</value>
+				<dependentTests>
+					<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">k
+				<value>2</value>
+				<dependentTests>
+					<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">wn
+				<value>240n</value>
+				<dependentTests>
+					<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">ln
+				<value>180n</value>
+				<dependentTests>
+					<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<jobpolicyname>ADE XL Default</jobpolicyname>
+		<distributeoptions>
+			<genusjoblimits>
+				<genusjoblimit>ICRP
+					<value>0</value>
+				</genusjoblimit>
+			</genusjoblimits>
+			<specifyjoblimit>0</specifyjoblimit>
+			<parallelrun>1</parallelrun>
+		</distributeoptions>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry>Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ff
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ff"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">ss
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ss"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">fnsp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"fnsp"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">snfp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"snfp"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Adder:adder_sim:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Adder:adder_sim:1_ams_power_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_power</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">CLK_PER
+						<value>1.02K</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">k
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">wn
+						<value>240n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">ln
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<distributeoptions>
+					<genusjoblimits>
+						<genusjoblimit>ICRP
+							<value>0</value>
+						</genusjoblimit>
+					</genusjoblimits>
+					<specifyjoblimit>0</specifyjoblimit>
+					<parallelrun>1</parallelrun>
+				</distributeoptions>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Jun 7 13:47:25 2017</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_134726327</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ff
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ff"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">ss
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ss"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">fnsp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"fnsp"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">snfp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"snfp"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Adder:adder_sim:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Adder:adder_sim:1_ams_power_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_power</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">CLK_PER
+						<value>1.02K</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">k
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">wn
+						<value>240n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">ln
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<distributeoptions>
+					<genusjoblimits>
+						<genusjoblimit>ICRP
+							<value>0</value>
+						</genusjoblimit>
+					</genusjoblimits>
+					<specifyjoblimit>0</specifyjoblimit>
+					<parallelrun>1</parallelrun>
+				</distributeoptions>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Jun  7 20:07:25 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_200725815</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.3</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.4
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ff
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ff"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">ss
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ss"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">fnsp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"fnsp"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">snfp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"snfp"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Adder:adder_sim:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Adder:adder_sim:1_ams_power_Interactive.4</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_power</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">CLK_PER
+						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:1010:2:1025{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">k
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">wn
+						<value>240n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">ln
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<distributeoptions>
+					<genusjoblimits>
+						<genusjoblimit>ICRP
+							<value>0</value>
+						</genusjoblimit>
+					</genusjoblimits>
+					<specifyjoblimit>0</specifyjoblimit>
+					<parallelrun>1</parallelrun>
+				</distributeoptions>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Jun  7 20:41:43 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.4.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_204143920</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.4</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.4</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.4.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CLK_PER
+						<value>1017</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.5
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ff
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ff"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">ss
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ss"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">fnsp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"fnsp"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">snfp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"snfp"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Adder:adder_sim:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Adder:adder_sim:1_ams_power_Interactive.5</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_power</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">CLK_PER
+						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:996:2:1008{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">k
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">wn
+						<value>240n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">ln
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<distributeoptions>
+					<genusjoblimits>
+						<genusjoblimit>ICRP
+							<value>0</value>
+						</genusjoblimit>
+					</genusjoblimits>
+					<specifyjoblimit>0</specifyjoblimit>
+					<parallelrun>1</parallelrun>
+				</distributeoptions>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Jun  7 21:12:45 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.5.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_211246093</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.5</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.5</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.5.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CLK_PER
+						<value>1017</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.6
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ff
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ff"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">ss
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ss"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">fnsp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"fnsp"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">snfp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"snfp"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Adder:adder_sim:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Adder:adder_sim:1_ams_power_Interactive.6</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_power</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">CLK_PER
+						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:996:2:1008{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">k
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">wn
+						<value>240n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">ln
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<distributeoptions>
+					<genusjoblimits>
+						<genusjoblimit>ICRP
+							<value>0</value>
+						</genusjoblimit>
+					</genusjoblimits>
+					<specifyjoblimit>0</specifyjoblimit>
+					<parallelrun>1</parallelrun>
+				</distributeoptions>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Jun  7 21:13:17 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.6.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_211317739</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.6</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.6</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.6.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CLK_PER
+						<value>1017</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.7
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ff
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ff"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">ss
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ss"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">fnsp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"fnsp"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">snfp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"snfp"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Adder:adder_sim:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Adder:adder_sim:1_ams_power_Interactive.7</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_power</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">CLK_PER
+						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:996:2:1008{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">k
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">wn
+						<value>240n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">ln
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<distributeoptions>
+					<genusjoblimits>
+						<genusjoblimit>ICRP
+							<value>0</value>
+						</genusjoblimit>
+					</genusjoblimits>
+					<specifyjoblimit>0</specifyjoblimit>
+					<parallelrun>1</parallelrun>
+				</distributeoptions>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Jun  7 21:13:51 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.7.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_211351961</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.7</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.7</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.7.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CLK_PER
+						<value>1017</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ff
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ff"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">ss
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ss"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">fnsp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"fnsp"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">snfp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"snfp"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Adder:adder_sim:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Adder:adder_sim:1_ams_power_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_power</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">CLK_PER
+						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:996:2:1008{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">k
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">wn
+						<value>240n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">ln
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<distributeoptions>
+					<genusjoblimits>
+						<genusjoblimit>ICRP
+							<value>0</value>
+						</genusjoblimit>
+					</genusjoblimits>
+					<specifyjoblimit>0</specifyjoblimit>
+					<parallelrun>1</parallelrun>
+				</distributeoptions>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Jun  7 21:17:52 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_211752603</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.8</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CLK_PER
+						<value>1017</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ff
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ff"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">ss
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ss"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">fnsp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"fnsp"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">snfp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"snfp"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Adder:adder_sim:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Adder:adder_sim:1_ams_power_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_power</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">CLK_PER
+						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:996:2:1008{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">k
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">wn
+						<value>240n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">ln
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<distributeoptions>
+					<genusjoblimits>
+						<genusjoblimit>ICRP
+							<value>0</value>
+						</genusjoblimit>
+					</genusjoblimits>
+					<specifyjoblimit>0</specifyjoblimit>
+					<parallelrun>1</parallelrun>
+				</distributeoptions>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Jun  7 21:18:12 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_211813005</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.9</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CLK_PER
+						<value>1017</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.10
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ff
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ff"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">ss
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ss"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">fnsp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"fnsp"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">snfp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"snfp"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Adder:adder_sim:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Adder:adder_sim:1_ams_power_Interactive.10</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_power</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">CLK_PER
+						<value>{Inclusion List}1000{Inclusion List}{From/To}Linear:900:5:1000{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">k
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">wn
+						<value>240n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">ln
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<distributeoptions>
+					<genusjoblimits>
+						<genusjoblimit>ICRP
+							<value>0</value>
+						</genusjoblimit>
+					</genusjoblimits>
+					<specifyjoblimit>0</specifyjoblimit>
+					<parallelrun>1</parallelrun>
+				</distributeoptions>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Jun  7 21:34:11 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.10.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_213411544</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.10</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.10</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.10.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CLK_PER
+						<value>1017</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.11
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">ff
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ff"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">ss
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"ss"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">fnsp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"fnsp"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">snfp
+						<models>
+							<model enabled="1">mm180_reg18_v124.lib.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/cad/dk/umc180oa/cds/UMC_18_CMOS/../Models/Spectre/mm180_reg18_v124.lib.scs</modelfile>
+								<modelsection>"snfp"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Adder:adder_sim:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Adder:adder_sim:1_ams_power_Interactive.11</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>adder_sim</value>
+							</option>
+							<option>lib
+								<value>Adder</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_power</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">CLK_PER
+						<value>{Inclusion List}800{Inclusion List}{From/To}Linear:800:5:900{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">k
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">wn
+						<value>240n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">ln
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<distributeoptions>
+					<genusjoblimits>
+						<genusjoblimit>ICRP
+							<value>0</value>
+						</genusjoblimit>
+					</genusjoblimits>
+					<specifyjoblimit>0</specifyjoblimit>
+					<parallelrun>1</parallelrun>
+				</distributeoptions>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Jun  7 21:37:37 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.11.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_213737620</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.11</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.11</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.11.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CLK_PER
+						<value>1017</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

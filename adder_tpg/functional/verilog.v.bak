@@ -3,7 +3,7 @@
 
 module adder_tpg
 #(parameter CLK_PERIOD=10_000,
-            PATTERNS=100
+            PATTERNS=128
 )
 ( 
 	output reg [15:0] a,
@@ -41,7 +41,7 @@ initial begin
 		@(negedge clk) 
 			a = (65535 - (i * 511)) ^ sh;
 			b = (1 + (i * 509)) ^ sh;
-		    $display("%0t - Pattern #%0d, a=%h, b=%h",$time,i,a,b);
+		    $display("%0t - Pattern #%0d, a=%b, b=%b,$time,i,a,b);
 	end
 	@(negedge clk);
 	@(negedge clk);
