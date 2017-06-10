@@ -1,8 +1,0 @@
-matlabDesignName ""
-matlabStartCmd "matlab"
-autoCreatePcellFile t
-matlabStartDir ""
-couplerFilePath ""
-couplerInst ""
-whenStartMatlab "no"
-simInitTimeOut 10
