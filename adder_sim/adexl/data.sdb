@@ -13,7 +13,7 @@
 					</model>
 				</models>
 			</corner>
-			<corner enabled="0">ss
+			<corner enabled="1">ss
 				<models>
 					<model enabled="1">mm180_reg18_v124.lib.scs
 						<modeltest>All</modeltest>
@@ -23,7 +23,7 @@
 					</model>
 				</models>
 			</corner>
-			<corner enabled="0">fnsp
+			<corner enabled="1">fnsp
 				<models>
 					<model enabled="1">mm180_reg18_v124.lib.scs
 						<modeltest>All</modeltest>
@@ -33,7 +33,7 @@
 					</model>
 				</models>
 			</corner>
-			<corner enabled="0">snfp
+			<corner enabled="1">snfp
 				<models>
 					<model enabled="1">mm180_reg18_v124.lib.scs
 						<modeltest>All</modeltest>
@@ -96,17 +96,22 @@
 						<value>ams_power</value>
 					</option>
 				</origoptions>
+				<outputs>
+					<output>TotalPower100
+						<evalType>point</evalType>
+					</output>
+				</outputs>
 			</test>
 		</tests>
 		<vars>
 			<var enabled="1">CLK_PER
-				<value>{Inclusion List}800{Inclusion List}{From/To}Linear:800:5:900{From/To}</value>
+				<value>100000</value>
 				<dependentTests>
 					<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var enabled="1">k
-				<value>2</value>
+				<value>{Inclusion List}1.0{Inclusion List}{Inclusion List}1.5{Inclusion List}{Inclusion List}2.0{Inclusion List}{Inclusion List}2.5{Inclusion List}</value>
 				<dependentTests>
 					<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 				</dependentTests>
@@ -148,7 +153,7 @@
 		</plottingoptions>
 	</active>
 	<history>History
-		<historyentry>Interactive.2
+		<historyentry>Interactive.22
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -162,7 +167,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">ss
+					<corner enabled="0">ss
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -172,7 +177,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">fnsp
+					<corner enabled="0">fnsp
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -182,7 +187,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">snfp
+					<corner enabled="0">snfp
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -222,7 +227,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Adder:adder_sim:1_ams_power_Interactive.2</value>
+								<value>Adder:adder_sim:1_ams_power_Interactive.22</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -245,31 +250,42 @@
 								<value>ams_power</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>TotalPower100
+								<evalType>point</evalType>
+							</output>
+							<output>IntegralPeriod
+								<evalType>point</evalType>
+							</output>
+							<output>1overT
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var enabled="1">CLK_PER
-						<value>1.02K</value>
+						<value>900</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">k
-						<value>2</value>
+						<value>1</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">wn
 						<value>240n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">ln
 						<value>180n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -296,22 +312,22 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Jun 7 13:47:25 2017</timestamp>
-			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.2.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<timestamp>Sat Jun 10 12:47:46 2017</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.22.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadence56_hgorowski_134726327</localpsfdir>
-			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.2</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.2</simdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_124746875</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.22</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.22</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.2.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.22.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.22.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.3
+		<historyentry>Interactive.23
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -325,7 +341,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">ss
+					<corner enabled="0">ss
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -335,7 +351,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">fnsp
+					<corner enabled="0">fnsp
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -345,7 +361,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">snfp
+					<corner enabled="0">snfp
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -385,7 +401,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Adder:adder_sim:1_ams_power_Interactive.3</value>
+								<value>Adder:adder_sim:1_ams_power_Interactive.23</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -408,31 +424,42 @@
 								<value>ams_power</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>TotalPower100
+								<evalType>point</evalType>
+							</output>
+							<output>IntegralPeriod
+								<evalType>point</evalType>
+							</output>
+							<output>1overT
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var enabled="1">CLK_PER
-						<value>1.02K</value>
+						<value>900</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">k
-						<value>2</value>
+						<value>1</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">wn
 						<value>240n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">ln
 						<value>180n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -459,22 +486,28 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
+<<<<<<< HEAD
+			<timestamp>Sat Jun 10 12:50:36 2017</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.23.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
+=======
 			<timestamp>Wed Jun 7 20:07:25 2017</timestamp>
 			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.3.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+>>>>>>> 7c94f3e0b09b50d3f4e46c90533a7031b61f537c
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadence56_hgorowski_200725815</localpsfdir>
-			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.3</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.3</simdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_125036515</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.23</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.23</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.3.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.23.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.23.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.4
+		<historyentry>Interactive.24
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -548,7 +581,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Adder:adder_sim:1_ams_power_Interactive.4</value>
+								<value>Adder:adder_sim:1_ams_power_Interactive.24</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -571,31 +604,42 @@
 								<value>ams_power</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>TotalPower100
+								<evalType>point</evalType>
+							</output>
+							<output>IntegralPeriod
+								<evalType>point</evalType>
+							</output>
+							<output>1overT
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var enabled="1">CLK_PER
-						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:1010:2:1025{From/To}</value>
+						<value>900</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">k
-						<value>2</value>
+						<value>{Inclusion List}1{Inclusion List}{Inclusion List}1.5{Inclusion List}</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">wn
 						<value>240n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">ln
 						<value>180n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -622,28 +666,34 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
+<<<<<<< HEAD
+			<timestamp>Sat Jun 10 12:59:56 2017</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.24.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.24.rdb</simresults>
+=======
 			<timestamp>Wed Jun 7 20:41:43 2017</timestamp>
 			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.4.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+>>>>>>> 7c94f3e0b09b50d3f4e46c90533a7031b61f537c
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadence56_hgorowski_204143920</localpsfdir>
-			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.4</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.4</simdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_125957046</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.24</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.24</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.4.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.24.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.24.log</runlogfile>
 			<schematicpoint>
 				<vars>
-					<var>CLK_PER
-						<value>1017</value>
+					<var>k
+						<value>1</value>
 					</var>
 				</vars>
 			</schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.5
+		<historyentry>Interactive.25
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -717,7 +767,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Adder:adder_sim:1_ams_power_Interactive.5</value>
+								<value>Adder:adder_sim:1_ams_power_Interactive.25</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -740,31 +790,42 @@
 								<value>ams_power</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>TotalPower100
+								<evalType>point</evalType>
+							</output>
+							<output>IntegralPeriod
+								<evalType>point</evalType>
+							</output>
+							<output>1overT
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var enabled="1">CLK_PER
-						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:996:2:1008{From/To}</value>
+						<value>900</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">k
-						<value>2</value>
+						<value>{Inclusion List}1{Inclusion List}{Inclusion List}1.5{Inclusion List}</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">wn
 						<value>240n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">ln
 						<value>180n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -791,28 +852,34 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
+<<<<<<< HEAD
+			<timestamp>Sat Jun 10 13:00:10 2017</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.25.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.25.rdb</simresults>
+=======
 			<timestamp>Wed Jun 7 21:12:45 2017</timestamp>
 			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.5.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+>>>>>>> 7c94f3e0b09b50d3f4e46c90533a7031b61f537c
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadence56_hgorowski_211246093</localpsfdir>
-			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.5</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.5</simdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_130011035</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.25</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.25</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.5.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.25.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.25.log</runlogfile>
 			<schematicpoint>
 				<vars>
-					<var>CLK_PER
-						<value>1017</value>
+					<var>k
+						<value>1</value>
 					</var>
 				</vars>
 			</schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.6
+		<historyentry>Interactive.26
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -886,7 +953,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Adder:adder_sim:1_ams_power_Interactive.6</value>
+								<value>Adder:adder_sim:1_ams_power_Interactive.26</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -909,31 +976,36 @@
 								<value>ams_power</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>TotalPower100
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var enabled="1">CLK_PER
-						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:996:2:1008{From/To}</value>
+						<value>100000</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">k
-						<value>2</value>
+						<value>{Inclusion List}1{Inclusion List}{Inclusion List}1.5{Inclusion List}</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">wn
 						<value>240n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">ln
 						<value>180n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -960,28 +1032,34 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
+<<<<<<< HEAD
+			<timestamp>Sat Jun 10 13:03:07 2017</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.26.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.26.rdb</simresults>
+=======
 			<timestamp>Wed Jun 7 21:13:17 2017</timestamp>
 			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.6.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+>>>>>>> 7c94f3e0b09b50d3f4e46c90533a7031b61f537c
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadence56_hgorowski_211317739</localpsfdir>
-			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.6</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.6</simdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_130307218</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.26</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.26</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.6.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.26.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.26.log</runlogfile>
 			<schematicpoint>
 				<vars>
-					<var>CLK_PER
-						<value>1017</value>
+					<var>k
+						<value>1</value>
 					</var>
 				</vars>
 			</schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.7
+		<historyentry>Interactive.27
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1055,7 +1133,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Adder:adder_sim:1_ams_power_Interactive.7</value>
+								<value>Adder:adder_sim:1_ams_power_Interactive.27</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1078,31 +1156,36 @@
 								<value>ams_power</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>TotalPower100
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var enabled="1">CLK_PER
-						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:996:2:1008{From/To}</value>
+						<value>100000</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">k
-						<value>2</value>
+						<value>{Inclusion List}1{Inclusion List}{Inclusion List}1.5{Inclusion List}</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">wn
 						<value>240n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">ln
 						<value>180n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -1129,28 +1212,34 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
+<<<<<<< HEAD
+			<timestamp>Sat Jun 10 13:07:37 2017</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.27.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.27.rdb</simresults>
+=======
 			<timestamp>Wed Jun 7 21:13:51 2017</timestamp>
 			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.7.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+>>>>>>> 7c94f3e0b09b50d3f4e46c90533a7031b61f537c
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadence56_hgorowski_211351961</localpsfdir>
-			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.7</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.7</simdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_130737671</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.27</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.27</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.7.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.27.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.27.log</runlogfile>
 			<schematicpoint>
 				<vars>
-					<var>CLK_PER
-						<value>1017</value>
+					<var>k
+						<value>1</value>
 					</var>
 				</vars>
 			</schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.8
+		<historyentry>Interactive.28
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1224,7 +1313,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Adder:adder_sim:1_ams_power_Interactive.8</value>
+								<value>Adder:adder_sim:1_ams_power_Interactive.28</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1247,31 +1336,36 @@
 								<value>ams_power</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>TotalPower100
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var enabled="1">CLK_PER
-						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:996:2:1008{From/To}</value>
+						<value>100000</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">k
-						<value>2</value>
+						<value>2.5</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">wn
 						<value>240n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">ln
 						<value>180n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -1298,28 +1392,28 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
+<<<<<<< HEAD
+			<timestamp>Sat Jun 10 13:21:48 2017</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.28.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
+=======
 			<timestamp>Wed Jun 7 21:17:52 2017</timestamp>
 			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.8.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+>>>>>>> 7c94f3e0b09b50d3f4e46c90533a7031b61f537c
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadence56_hgorowski_211752603</localpsfdir>
-			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.8</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.8</simdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_132148790</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.28</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.28</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.8.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>CLK_PER
-						<value>1017</value>
-					</var>
-				</vars>
-			</schematicpoint>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.28.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.28.log</runlogfile>
+			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.9
+		<historyentry>Interactive.29
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1393,7 +1487,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Adder:adder_sim:1_ams_power_Interactive.9</value>
+								<value>Adder:adder_sim:1_ams_power_Interactive.29</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1416,31 +1510,36 @@
 								<value>ams_power</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>TotalPower100
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var enabled="1">CLK_PER
-						<value>{Inclusion List}1.02K{Inclusion List}{From/To}Linear:996:2:1008{From/To}</value>
+						<value>100000</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">k
-						<value>2</value>
+						<value>{Inclusion List}1.0{Inclusion List}{Inclusion List}1.5{Inclusion List}{Inclusion List}2.0{Inclusion List}{Inclusion List}2.5{Inclusion List}</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">wn
 						<value>240n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">ln
 						<value>180n</value>
 						<dependentTests>
-							<dependentTest omitted="0">Adder:adder_sim:1</dependentTest>
+							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -1467,28 +1566,35 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
+<<<<<<< HEAD
+			<timestamp>Sat Jun 10 15:57:03 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.29.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.29.rdb</simresults>
+=======
 			<timestamp>Wed Jun 7 21:18:12 2017</timestamp>
 			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.9.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+>>>>>>> 7c94f3e0b09b50d3f4e46c90533a7031b61f537c
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadence56_hgorowski_211813005</localpsfdir>
-			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.9</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.9</simdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_155703347</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.29</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.29</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.9.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.29.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.29.log</runlogfile>
 			<schematicpoint>
 				<vars>
-					<var>CLK_PER
-						<value>1017</value>
+					<var>k
+						<value>1</value>
 					</var>
 				</vars>
 			</schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.10
+		<historyentry>Interactive.30
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1502,7 +1608,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">ss
+					<corner enabled="1">ss
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -1512,7 +1618,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">fnsp
+					<corner enabled="1">fnsp
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -1522,7 +1628,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">snfp
+					<corner enabled="1">snfp
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -1562,7 +1668,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Adder:adder_sim:1_ams_power_Interactive.10</value>
+								<value>Adder:adder_sim:1_ams_power_Interactive.30</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1585,17 +1691,22 @@
 								<value>ams_power</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>TotalPower100
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var enabled="1">CLK_PER
-						<value>{Inclusion List}1000{Inclusion List}{From/To}Linear:900:5:1000{From/To}</value>
+						<value>100000</value>
 						<dependentTests>
 							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">k
-						<value>2</value>
+						<value>{Inclusion List}1.0{Inclusion List}{Inclusion List}1.5{Inclusion List}{Inclusion List}2.0{Inclusion List}{Inclusion List}2.5{Inclusion List}</value>
 						<dependentTests>
 							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
@@ -1636,28 +1747,35 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
+<<<<<<< HEAD
+			<timestamp>Sat Jun 10 16:00:13 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.30.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.30.rdb</simresults>
+=======
 			<timestamp>Wed Jun 7 21:34:11 2017</timestamp>
 			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.10.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+>>>>>>> 7c94f3e0b09b50d3f4e46c90533a7031b61f537c
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadence56_hgorowski_213411544</localpsfdir>
-			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.10</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.10</simdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_160013960</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.30</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.30</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.10.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.30.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.30.log</runlogfile>
 			<schematicpoint>
 				<vars>
-					<var>CLK_PER
-						<value>1017</value>
+					<var>k
+						<value>1</value>
 					</var>
 				</vars>
 			</schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.11
+		<historyentry>Interactive.31
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1671,7 +1789,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">ss
+					<corner enabled="1">ss
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -1681,7 +1799,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">fnsp
+					<corner enabled="1">fnsp
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -1691,7 +1809,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">snfp
+					<corner enabled="1">snfp
 						<models>
 							<model enabled="1">mm180_reg18_v124.lib.scs
 								<modeltest>All</modeltest>
@@ -1731,7 +1849,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Adder:adder_sim:1_ams_power_Interactive.11</value>
+								<value>Adder:adder_sim:1_ams_power_Interactive.31</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1754,17 +1872,22 @@
 								<value>ams_power</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>TotalPower100
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var enabled="1">CLK_PER
-						<value>{Inclusion List}800{Inclusion List}{From/To}Linear:800:5:900{From/To}</value>
+						<value>100000</value>
 						<dependentTests>
 							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="1">k
-						<value>2</value>
+						<value>{Inclusion List}1.0{Inclusion List}{Inclusion List}1.5{Inclusion List}{Inclusion List}2.0{Inclusion List}{Inclusion List}2.5{Inclusion List}</value>
 						<dependentTests>
 							<dependentTest enabled="1">Adder:adder_sim:1</dependentTest>
 						</dependentTests>
@@ -1805,22 +1928,29 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
+<<<<<<< HEAD
+			<timestamp>Sat Jun 10 16:05:53 2017
+</timestamp>
+			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.31.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.31.rdb</simresults>
+=======
 			<timestamp>Wed Jun 7 21:37:37 2017</timestamp>
 			<resultsname>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.11.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+>>>>>>> 7c94f3e0b09b50d3f4e46c90533a7031b61f537c
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadence56_hgorowski_213737620</localpsfdir>
-			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.11</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.11</simdir>
+			<localpsfdir>/tmp/cadence56_hgorowski_160553341</localpsfdir>
+			<psfdir>/local/scratch/hgorowski/Sim/Adder/adder_sim/adexl/results/data/Interactive.31</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Adder/adder_sim/adexl/results/data/Interactive.31</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.11.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<runlog>/student/hgorowski/PPCU_VLSI/ADDER/Adder/adder_sim/adexl/results/data/Interactive.31.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.31.log</runlogfile>
 			<schematicpoint>
 				<vars>
-					<var>CLK_PER
-						<value>1017</value>
+					<var>k
+						<value>1</value>
 					</var>
 				</vars>
 			</schematicpoint>

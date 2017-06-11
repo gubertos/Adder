@@ -1,0 +1,26 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Jun 10 13:03:08 2017 
+Best design point: 1
+Design specs: 
+	Adder:adder_sim:1	corner	ff - 
+	TotalPower100		-215.5n
+	Adder:adder_sim:1	corner	ss - 
+	TotalPower100		-3.608u
+	Adder:adder_sim:1	corner	fnsp - 
+	TotalPower100		-3.318u
+	Adder:adder_sim:1	corner	snfp - 
+	TotalPower100		702.6n
+	Adder:adder_sim:1	corner	Nominal - 
+	TotalPower100		-4.152u
+Design parameters: 
+	CLK_PER		100k
+	k		1
+	wn		240n
+	ln		180n
+
+Interactive.26
+Number of points completed: 2
+Number of simulation errors: 1
+Interactive.26 completed. 
+Current time: Sat Jun 10 13:04:32 2017 
