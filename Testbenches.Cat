@@ -1,6 +1,8 @@
 TDMCHECKPOINT="1.0"
 Adder/Adder16_tb type="cell"
 Adder/Adder16_tb_old type="cell"
+Adder/AdderHC_inv_20_sim type="cell"
+Adder/AdderHC_inv_25_sim type="cell"
 Adder/AdderHC_inv_sim type="cell"
 Adder/AdderHC_inv_v2_sim type="cell"
 Adder/Adder_HCinvCSel_tb type="cell"

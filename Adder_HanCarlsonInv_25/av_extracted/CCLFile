@@ -1,0 +1,40 @@
+#
+# OPTION COMMAND FILE created by Cadence Quantus QRC Extraction Version 14.1.1-s065 from CCL
+#
+capacitance \
+	 -decoupling_factor 1.0 \
+	 -ground_net "gnd!"
+extract \
+	 -selection "all" \
+	 -type "c_only_coupled"
+extraction_setup \
+	 -net_name_space "LAYOUT"
+filter_coupling_cap \
+	 -coupling_cap_threshold_absolute 0.01 \
+	 -coupling_cap_threshold_relative 0.001
+input_db -type assura \
+	 -design_cell_name "Adder_HanCarlsonInv_25 layout Adder" \
+	 -directory_name "/local/scratch/btutro/ASSURA_LVS" \
+	 -format "DFII" \
+	 -run_name "Adder_HanCarlsonInv_25"
+log_file \
+	 -file_name "/local/scratch/btutro/ASSURA_LVS/qrc.Adder_HanCarlsonInv_25.log"
+output_db -type extracted_view \
+	 -cap_component "pcapacitor" \
+	 -cap_property_name "c" \
+	 -enable_cellview_check false \
+	 -include_cap_model "false" \
+	 -include_parasitic_cap_model "false" \
+	 -include_parasitic_res_model "comment" \
+	 -include_res_model "false" \
+	 -view_name "av_extracted"
+output_setup \
+	 -directory_name "/local/scratch/btutro/ASSURA_LVS" \
+	 -temporary_directory_name "Adder_HanCarlsonInv_25"
+process_technology \
+	 -technology_corner \
+		"LVS_2.0_p2" \
+	 -technology_library_file "/cad/dk/umc180oa/assura_tech.lib" \
+	 -technology_name "Assura_LVS"
+
+
