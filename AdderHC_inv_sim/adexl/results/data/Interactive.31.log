@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Jun 17 20:26:45 2017 
+Best design point: 1
+Design specs: 
+	Adder:AdderHC_inv_sim:1	corner	ff - 
+	Power		9.149u
+Design parameters: 
+	CLK_PER		100k
+	PAT		100
+
+Interactive.31
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.31 completed. 
+Current time: Sat Jun 17 20:27:40 2017 
