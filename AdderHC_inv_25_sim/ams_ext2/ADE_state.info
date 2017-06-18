@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("Adder" "AdderHC_inv_25_sim" "config" "ams")
+descriptionText = "None"
