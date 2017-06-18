@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Jun 18 22:56:18 2017 
+Best design point: 3
+Design specs: 
+	Adder:adder_sim:1	corner	fnsp - 
+Design parameters: 
+	CLK_PER		1.292k
+
+Interactive.50
+Number of points completed: 11
+Number of simulation errors: 1
+Interactive.50 completed. 
+Current time: Sun Jun 18 23:01:22 2017 
